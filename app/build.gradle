@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk Versions.Android.compileSdkVersion
+
+    defaultConfig {
+        applicationId "io.github.ziginsider.masterlingua"
+        minSdk Versions.Android.minSdkVersion
+        targetSdk Versions.Android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility Versions.Android.javaVersion
+        targetCompatibility Versions.Android.javaVersion
+    }
+
+    kotlinOptions {
+        jvmTarget = Versions.Android.javaVersion
+    }
+}
+
+dependencies {
+
+    implementation(Libraries.AndroidX.coreKtx)
+    implementation(Libraries.AndroidX.appCompat)
+    implementation (Libraries.AndroidX.material)
+    implementation(Libraries.AndroidX.constraintlayout)
+}
