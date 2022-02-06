@@ -6,12 +6,14 @@ Skeleton:
 - [x] new pr
 - [x] versions
 - [x] non transitive R classes
-- [ ] dagger
+- [x] dagger
 - [ ] firebase crashlytics
 - [ ] add debug type of build
 - [ ] configure CI (Jenkins X)
 - [ ] add app version calculation
 - [ ] add firebase app distribution (??)
+- [ ] add lint, deteckt, etc.
+- [ ] add coroutine dispatchers (base module)
 
 Migrate:
 - [ ] color theme
