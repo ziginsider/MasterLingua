@@ -1,0 +1,20 @@
+def readEnabledProperty(String propertyName, boolean defaultValue) {
+    if (project.hasProperty(propertyName)) {
+        def value = project.property(propertyName)
+        if (value == "enabled") {
+            return true
+        } else if (value == "disabled") {
+            return false
+        } else {
+            throw new GradleException("Property '${propertyName}' can be only 'enabled' or 'disabled' value")
+        }
+    } else {
+        return defaultValue
+    }
+}
+
+ext {
+    dagger_formatGeneratedSource = project.hasProperty("dagger.formatGeneratedSource")
+    dagger_incremental = readEnabledProperty("dagger.incremental", true)
+    dagger_fastInit = readEnabledProperty("dagger.fastInit", true)
+}

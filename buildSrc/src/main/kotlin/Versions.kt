@@ -9,7 +9,7 @@ object Versions {
 
     object GradlePlugins {
         val crashlytics = "2.3.0"
-        val buildTools = "7.0.1"
+        val buildTools = "7.0.4"
         val googleServices = "4.3.10"
 
         val androidJunit5 = "1.8.2.0"
