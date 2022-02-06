@@ -33,9 +33,18 @@ android {
 }
 
 dependencies {
+    // Modules
+    implementation(project(":dagger-core"))
 
+    // Android-x
     implementation(Libraries.AndroidX.coreKtx)
     implementation(Libraries.AndroidX.appCompat)
     implementation (Libraries.AndroidX.material)
     implementation(Libraries.AndroidX.constraintlayout)
+
+    // Dagger
+    implementation(Libraries.Dagger.core)
+    kapt(Libraries.Dagger.compiler)
 }
+
+apply from: "gradle/dagger2_setup.gradle"

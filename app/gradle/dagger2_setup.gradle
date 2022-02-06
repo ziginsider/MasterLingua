@@ -1,0 +1,29 @@
+if (!dagger_formatGeneratedSource) {
+    logger.log(LogLevel.WARN, "Dagger 2: Formatting of generated sources is disabled")
+}
+if (dagger_incremental) {
+    logger.log(LogLevel.WARN, "Dagger 2: Gradle incremental mode enabled")
+}
+if (dagger_fastInit) {
+    logger.log(LogLevel.WARN, "Dagger 2: Fast init mode enabled")
+}
+
+static def getEnabledString(boolean enabled) {
+    return enabled ? "enabled" : "disabled"
+}
+
+tasks.withType(JavaCompile).configureEach { JavaCompile task ->
+    task.options.compilerArgs += [
+            "-Adagger.fastInit=${getEnabledString(dagger_fastInit)}",
+            "-Adagger.gradle.incremental=${getEnabledString(dagger_incremental)}",
+            "-Adagger.formatGeneratedSource=${getEnabledString(dagger_formatGeneratedSource)}"
+    ]
+}
+
+kapt {
+    arguments {
+        arg("dagger.formatGeneratedSource", getEnabledString(dagger_formatGeneratedSource))
+        arg("dagger.gradle.incremental", getEnabledString(dagger_incremental))
+        arg("dagger.fastInit", getEnabledString(dagger_fastInit))
+    }
+}

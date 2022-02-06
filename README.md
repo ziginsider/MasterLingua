@@ -12,6 +12,8 @@ Skeleton:
 - [ ] configure CI (Jenkins X)
 - [ ] add app version calculation
 - [ ] add firebase app distribution (??)
+- [ ] add lint, deteckt, etc.
+- [ ] add coroutine dispatchers (base module)
 
 Migrate:
 - [ ] color theme
