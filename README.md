@@ -6,7 +6,7 @@ Skeleton:
 - [x] new pr
 - [x] versions
 - [x] non transitive R classes
-- [ ] dagger
+- [x] dagger
 - [ ] firebase crashlytics
 - [ ] add debug type of build
 - [ ] configure CI (Jenkins X)
