@@ -2,7 +2,14 @@ package io.github.ziginsider.daggercore.providers
 
 import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable
-import androidx.annotation.*
+import androidx.annotation.ArrayRes
+import androidx.annotation.ColorRes
+import androidx.annotation.DimenRes
+import androidx.annotation.DrawableRes
+import androidx.annotation.IntegerRes
+import androidx.annotation.PluralsRes
+import androidx.annotation.RawRes
+import androidx.annotation.StringRes
 
 interface AppResources {
 

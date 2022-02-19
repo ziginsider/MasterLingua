@@ -3,7 +3,14 @@ package io.github.ziginsider.masterlingua.common
 import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable
-import androidx.annotation.*
+import androidx.annotation.ColorInt
+import androidx.annotation.ColorRes
+import androidx.annotation.DimenRes
+import androidx.annotation.DrawableRes
+import androidx.annotation.IntegerRes
+import androidx.annotation.PluralsRes
+import androidx.annotation.RawRes
+import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 import io.github.ziginsider.daggercore.providers.AppResources
 import javax.inject.Inject
