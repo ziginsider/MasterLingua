@@ -6,7 +6,7 @@ import android.content.res.AssetManager
 import android.net.Uri
 import android.provider.OpenableColumns
 import android.util.Log
-import io.github.ziginsider.dagger_core.providers.AppFiles
+import io.github.ziginsider.daggercore.providers.AppFiles
 import java.io.File
 import java.io.IOException
 import java.io.InputStream

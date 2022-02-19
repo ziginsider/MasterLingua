@@ -5,7 +5,7 @@ import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable
 import androidx.annotation.*
 import androidx.core.content.ContextCompat
-import io.github.ziginsider.dagger_core.providers.AppResources
+import io.github.ziginsider.daggercore.providers.AppResources
 import javax.inject.Inject
 
 class AndroidAppResources @Inject constructor(

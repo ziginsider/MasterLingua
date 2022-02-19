@@ -12,7 +12,9 @@ Skeleton:
 - [ ] configure CI (Jenkins X)
 - [ ] add app version calculation
 - [ ] add firebase app distribution (??)
-- [ ] add lint, deteckt, etc.
+- [x] add detekt
+- [ ] add lint
+- [ ] add ktlint
 - [ ] add coroutine dispatchers (base module)
 
 Migrate:
