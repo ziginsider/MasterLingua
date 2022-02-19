@@ -83,8 +83,8 @@ class AndroidAppFiles @Inject constructor(
 
     private fun isValidContentUriScheme(scheme: String): Boolean {
         return ContentResolver.SCHEME_ANDROID_RESOURCE != scheme &&
-                ContentResolver.SCHEME_CONTENT != scheme &&
-                ContentResolver.SCHEME_FILE != scheme
+            ContentResolver.SCHEME_CONTENT != scheme &&
+            ContentResolver.SCHEME_FILE != scheme
     }
 
     private companion object {

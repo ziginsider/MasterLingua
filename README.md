@@ -14,7 +14,7 @@ Skeleton:
 - [ ] add firebase app distribution (??)
 - [x] add detekt
 - [ ] add lint
-- [ ] add ktlint
+- [x] add ktlint
 - [ ] add coroutine dispatchers (base module)
 
 Migrate:

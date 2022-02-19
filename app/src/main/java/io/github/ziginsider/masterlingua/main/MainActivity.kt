@@ -1,8 +1,8 @@
 package io.github.ziginsider.masterlingua.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import io.github.ziginsider.masterlingua.R
 
 class MainActivity : AppCompatActivity() {

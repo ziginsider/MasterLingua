@@ -5,3 +5,5 @@ detekt {
     input = files("src/main")
     config = rootProject.files('config/detekt.yml')
 }
+
+apply from: rootProject.file("config/ktlint.gradle")
