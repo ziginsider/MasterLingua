@@ -1,4 +1,4 @@
-package io.github.ziginsider.dagger_core.providers
+package io.github.ziginsider.daggercore.providers
 
 import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable

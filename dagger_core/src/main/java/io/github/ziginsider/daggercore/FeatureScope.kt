@@ -1,4 +1,4 @@
-package io.github.ziginsider.dagger_core
+package io.github.ziginsider.daggercore
 
 import javax.inject.Scope
 

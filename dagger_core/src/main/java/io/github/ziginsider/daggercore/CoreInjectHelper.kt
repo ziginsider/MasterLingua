@@ -1,6 +1,6 @@
 @file:JvmName("CoreInjectHelper")
 
-package io.github.ziginsider.dagger_core
+package io.github.ziginsider.daggercore
 
 import android.content.Context
 

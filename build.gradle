@@ -6,8 +6,12 @@ buildscript {
     dependencies {
         classpath(Libraries.GradlePlugins.buildTools)
         classpath(Libraries.GradlePlugins.kotlin)
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
     }
+}
+
+plugins {
+    // Static code analysis for Kotlin. See static_analysis_kt.gradle.
+    id "io.gitlab.arturbosch.detekt" version "1.19.0" apply false
 }
 
 apply from: "gradle/properties.gradle"

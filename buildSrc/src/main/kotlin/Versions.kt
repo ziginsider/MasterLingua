@@ -23,7 +23,7 @@ object Versions {
         val appcompat = "1.4.1"
         val activity = "1.4.0"
         val fragment = "1.4.0"
-        val navigation = "2.3.5"
+        val navigation = "2.4.1"
         val annotation = "1.3.0"
         val recyclerView = "1.2.1"
         val coreKtx = "1.7.0"
@@ -38,7 +38,7 @@ object Versions {
 
     object ArchComponents {
         val archCore = "2.1.0"
-        val lifecycle = "2.4.0"
+        val lifecycle = "2.4.1"
         val paging = "3.1.0"
         val dataStore = "1.0.0"
     }
@@ -52,12 +52,12 @@ object Versions {
     val kotlin = "1.6.0"
     val kotlinCoroutines = "1.6.0"
 
-    val dagger = "2.40.5"
+    val dagger = "2.41"
     val javaInject = "1"
 
     object Test {
         val espresso = "3.2.0"
-        val mockk = "1.10.0"
+        val mockk = "1.12.2"
         val robolectric = "4.6"
         val spek2 = "2.0.15"
     }
@@ -74,8 +74,8 @@ object Versions {
     }
 
     object CodeAnalyses {
-        val detekt = "1.17.1"
-        val ktlint = "0.41.0"
+        val detekt = "1.19.0"
+        val ktlint = "0.43.1"
     }
 }
 

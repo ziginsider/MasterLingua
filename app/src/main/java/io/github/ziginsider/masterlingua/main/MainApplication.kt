@@ -2,8 +2,9 @@ package io.github.ziginsider.masterlingua.main
 
 import android.app.Application
 import android.content.Context
-import io.github.ziginsider.dagger_core.CoreComponent
-import io.github.ziginsider.dagger_core.CoreComponentProvider
+import android.util.Log
+import io.github.ziginsider.daggercore.CoreComponent
+import io.github.ziginsider.daggercore.CoreComponentProvider
 import io.github.ziginsider.masterlingua.di.AppComponent
 import io.github.ziginsider.masterlingua.di.DaggerAppComponent
 
@@ -13,6 +14,7 @@ class MainApplication : Application(), CoreComponentProvider {
         private set
 
     override fun onCreate() {
+        Log.i(TAG, "onCreate()")
         super.onCreate()
 
         appComponent = DaggerAppComponent.builder()
@@ -26,6 +28,7 @@ class MainApplication : Application(), CoreComponentProvider {
     }
 
     private companion object {
+
         private const val TAG = "MainApplication"
     }
 }

@@ -3,7 +3,7 @@ package io.github.ziginsider.masterlingua.di
 import android.app.Application
 import dagger.BindsInstance
 import dagger.Component
-import io.github.ziginsider.dagger_core.CoreComponent
+import io.github.ziginsider.daggercore.CoreComponent
 import io.github.ziginsider.masterlingua.main.MainActivity
 import io.github.ziginsider.masterlingua.main.MainApplication
 import javax.inject.Singleton
