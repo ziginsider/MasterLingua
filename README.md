@@ -32,3 +32,7 @@ Features:
 - [ ] history
 - [ ] basic search
 
+## Journal:
+
+2022-05-27: Update libs - branch: 003-update-libs
+
