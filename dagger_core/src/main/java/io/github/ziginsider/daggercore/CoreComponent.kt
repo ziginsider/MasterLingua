@@ -4,6 +4,7 @@ import android.content.ContentResolver
 import android.content.Context
 import android.content.res.AssetManager
 import android.content.res.Resources
+import io.github.ziginsider.base.coroutines.AppCoroutineDispatchers
 import io.github.ziginsider.daggercore.providers.AppFiles
 import io.github.ziginsider.daggercore.providers.AppResources
 
@@ -23,4 +24,6 @@ interface CoreComponent {
     fun getAssetManager(): AssetManager
 
     fun getAppFiles(): AppFiles
+
+    fun getCoroutineDispatchers(): AppCoroutineDispatchers
 }
