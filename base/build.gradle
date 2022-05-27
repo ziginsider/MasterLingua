@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: rootProject.file('config/static_analysis_kt.gradle')
+
+
+android {
+    compileSdkVersion = Versions.Android.compileSdkVersion
+    buildToolsVersion = Versions.Android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion Versions.Android.minSdkVersion
+        targetSdkVersion Versions.Android.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug
+        release
+    }
+
+    lintOptions {
+        abortOnError true
+        ignoreTestSources true
+        disable "NullSafeMutableLiveData"
+    }
+}
+
+dependencies {
+    implementation(Libraries.AndroidX.annotation)
+    implementation(Libraries.AndroidX.appCompat)
+
+    implementation(Libraries.ArchComponents.lifecycleLivedataCore)
+    kapt(Libraries.ArchComponents.lifecycleCompiler)
+    implementation(Libraries.ArchComponents.lifecycleViewmodelKtx)
+    implementation(Libraries.ArchComponents.lifecycleProcess)
+
+    implementation(Libraries.Kotlin.Coroutines.android)
+}
+
+tasks.withType(Class.forName("org.jetbrains.kotlin.gradle.tasks.KotlinCompile")).configureEach {
+    kotlinOptions.freeCompilerArgs += ["-Xopt-in=kotlin.RequiresOptIn"]
+}

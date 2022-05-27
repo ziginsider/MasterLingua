@@ -74,7 +74,7 @@ object Versions {
     }
 
     object CodeAnalyses {
-        val detekt = "1.20.0"
+        val detekt = "1.19.0" // 1.20.0 some issues with formatting
         val ktlint = "0.45.2"
     }
 }
