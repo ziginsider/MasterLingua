@@ -7,6 +7,9 @@ import android.content.res.AssetManager
 import android.content.res.Resources
 import dagger.Module
 import dagger.Provides
+import dagger.Reusable
+import io.github.ziginsider.base.background.AppVisibilityStateLiveData
+import io.github.ziginsider.base.background.VisibilityStateData
 
 @Module
 class AppModule {
@@ -22,4 +25,10 @@ class AppModule {
 
     @Provides
     fun provideAssetManager(app: Application): AssetManager = app.assets
+
+    @Provides
+    @Reusable
+    fun provideAppForegroundStateLiveData(): VisibilityStateData {
+        return AppVisibilityStateLiveData()
+    }
 }

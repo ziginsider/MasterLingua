@@ -36,6 +36,7 @@ android {
 dependencies {
     // Modules
     implementation(project(":dagger-core"))
+    implementation(project(":base"))
 
     // Android-x
     implementation(Libraries.AndroidX.coreKtx)

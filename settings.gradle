@@ -8,6 +8,8 @@ dependencyResolutionManagement {
 rootProject.name = "MasterLingua"
 include ':app'
 
+include ':base'
+
 include ":dagger_core"
 project(":dagger_core").with {
     name = "dagger-core"
